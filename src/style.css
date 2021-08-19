@@ -1,0 +1,52 @@
+h1{
+    color: deeppink;
+    margin: 0px;
+}
+
+#bordaexterna{
+    width: 300px;
+    margin: 20px;
+    border-style: outset;
+    border-width: 10px;
+}
+
+#borda{
+    width: 280px;
+    margin: 0px;
+    padding: 20px;
+    background-image: linear-gradient(rgb(105, 107, 245), rgb(93, 201, 228));
+    border-style: solid;
+    border-width: 5px;
+}
+
+.botoesonoff{
+    width: 40px;
+    height: 40px;
+    font-size: small;
+    margin-top: 20px;
+    color: white;
+    background-color: #e64379;
+}
+
+.botoescalc{
+    width: 50px;
+    height: 30px;
+    font-size:large;
+    font-weight: bold;
+    color: white;
+    background-color: #4d4d4d;
+}
+
+#botaoigual{
+    width: 112px;
+}
+
+.colunabotoes{
+    padding: 3px 6px;
+}
+
+input[type=text] {
+    font-weight: bold;
+    font-size: larger;
+    color: gray;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Web 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    <script src="./unit-test.js"></script>
+</head>
+<body>
+    <div id="bordaexterna" class="rounded-3">
+        <div id="borda" class="rounded-3">
+            <div class="row">
+                <div class="col-12">
+                    <input id="visor" type="text" class="form-control text-end" readonly>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <input onclick="DesligarCalc()" type="button" class="rounded-circle botoesonoff" value="OFF">
+                </div>
+                <div class="col-6">
+                    <input onclick="LigarCalc()" type="button" class="rounded-circle botoesonoff float-end" value="ON">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 colunabotoes">
+                    <input onclick="DigitarNumeros(7)" type="button" class="rounded-pill botoescalc" value="7">
+                </div>
+                <div class="col-3 colunabotoes">
+                    <input onclick="DigitarNumeros(8)" type="button" class="rounded-pill botoescalc" value="8">
+                </div>
+                <div class="col-3 colunabotoes">
+                    <input onclick="DigitarNumeros(9)" type="button" class="rounded-pill botoescalc" value="9">
+                </div>
+                <div class="col-3 colunabotoes">
+                    <input onclick="Operador('/')" type="button" class="rounded-pill botoescalc" value="/">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 colunabotoes">
+                    <input onclick="DigitarNumeros(4)" type="button" class="rounded-pill botoescalc" value="4">
+                </div>
+                <div class="col-3 colunabotoes">
+                    <input onclick="DigitarNumeros(5)" type="button" class="rounded-pill botoescalc" value="5">
+                </div>
+                <div class="col-3 colunabotoes">
+                    <input onclick="DigitarNumeros(6)" type="button" class="rounded-pill botoescalc" value="6">
+                </div>
+                <div class="col-3 colunabotoes">
+                    <input onclick="Operador('*')" type="button" class="rounded-pill botoescalc" value="*">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 colunabotoes">
+                    <input onclick="DigitarNumeros(1)" type="button" class="rounded-pill botoescalc" value="1">
+                </div>
+                <div class="col-3 colunabotoes">
+                    <input onclick="DigitarNumeros(2)" type="button" class="rounded-pill botoescalc" value="2">
+                </div>
+                <div class="col-3 colunabotoes">
+                    <input onclick="DigitarNumeros(3)" type="button" class="rounded-pill botoescalc" value="3">
+                </div>
+                <div class="col-3 colunabotoes">
+                    <input onclick="Operador('-')" type="button" class="rounded-pill botoescalc" value="-">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 colunabotoes">
+                    <input onclick="DigitarPonto()" type="button" class="rounded-pill botoescalc" value=",">
+                </div>
+                <div class="col-3 colunabotoes">
+                    <input onclick="DigitarNumeros(0)" type="button" class="rounded-pill botoescalc" value="0">
+                </div>
+                <div class="col-3 colunabotoes">
+                    <input onclick="DigitarNumeros('00')" type="button" class="rounded-pill botoescalc" value="00">
+                </div>
+                <div class="col-3 colunabotoes">
+                    <input onclick="Operador('+')" type="button" class="rounded-pill botoescalc" value="+">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 colunabotoes">
+                </div>
+                <div class="col-6 colunabotoes">
+                    <input onclick="Igual()" id="botaoigual" type="button" class="rounded-pill botoescalc" value="=">
+                </div>
+                <div class="col-3 colunabotoes">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
